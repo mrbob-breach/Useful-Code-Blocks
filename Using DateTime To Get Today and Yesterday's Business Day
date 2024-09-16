@@ -1,0 +1,6 @@
+import datetime
+from pandas.tseries.offsets import BDay
+
+today = datetime.date.today()
+one_bd_ago = (today - BDay(1)).strftime("%Y-%m-%d")
+two_bd_ago = (today - BDay(2)).strftime("%Y-%m-%d")
